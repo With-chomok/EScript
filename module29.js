@@ -56,4 +56,15 @@ const mult = multiply(2, 3);
 
 const substration = (b, c) => b - c;
 const sub = substration(5, 4);
-console.log( sub);
+// console.log( sub);
+
+
+// multiline arrow function 
+const multArrow = (a, b)=> {
+  let nums = multArrow(a + b);
+let num = nums(3,4);
+let result = num;
+
+console.log(result);
+
+}
