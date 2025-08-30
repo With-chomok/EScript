@@ -58,13 +58,42 @@ const substration = (b, c) => b - c;
 const sub = substration(5, 4);
 // console.log( sub);
 
-
-// multiline arrow function 
-const multArrow = (a, b)=> {
+// multiline arrow function
+const multArrow = (a, b) => {
   let nums = multArrow(a + b);
-let num = nums(3,4);
-let result = num;
+  let num = nums(3, 4);
+  let result = num;
 
-console.log(result);
+  // console.log(result);
+};
 
-}
+// spread Operator
+let number = [4, 5, 6, 7, 8];
+let newnumers = [1, 2, 3, ...number, 9, 10, 12];
+// console.log(newnumers);
+
+let numbers = [10, 20, 30, 4, 0, 50, 60, 80, 7, 90];
+const copyNum = [...numbers];
+const copyNumpush = [...copyNum];
+copyNumpush.push(2222, 3000, 5000);
+// console.log(copyNum);
+console.log(copyNumpush);
+let max = Math.max(...copyNumpush);
+console.log(max);
+
+const objects = {
+  name: "dipol",
+  age: "20",
+  address: "Mymensingh",
+};
+// console.log(objects);
+
+const newObj = { ...objects, designation: "programmer", study: "Engineering" };
+// console.log(newObj);
+
+// const person1 = { name: "dipol das", from: "bangladesh" };
+// const person2 = { name: "chomok", from: "Uganda" };
+// // console.log(person1);
+
+// const bothPersons = { ...person2, ...person1 };
+// console.log(bothPersons);
