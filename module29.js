@@ -1,3 +1,5 @@
+console.log("Start of file");
+
 function addNumber(sum1, sum2) {
   const totalNumber = sum1 + sum2;
   // console.log(totalNumber);
@@ -127,9 +129,9 @@ const { name, roll } = freezs;
 
 const names = Object.keys(freezs);
 const value = Object.values(freezs);
-const values = Object.keys(newObj)
+const values = Object.keys(newObj);
 // console.log(values);
-const counsts = Object.values(newObj)
+const counsts = Object.values(newObj);
 // console.log(counsts);
 const entries = Object.entries(newObj, freezs);
 // console.log(entries);
@@ -138,40 +140,123 @@ const entries = Object.entries(newObj, freezs);
 // Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
 
 // console.log(names);
-   let myObject = { name: "Alice", age: 30, city: "New York" };
-  //  Object.freeze(myObject);
-   
-   myObject.name = "dipol";
-   myObject.age = 20;
-   myObject.city = "BD"
-   delete myObject.age;
-   delete myObject.city;
-   delete myObject.name
-  //  const myObjects = Object.freeze(myObject)   
-  console.log(myObject);
+let myObject = { name: "Alice", age: 30, city: "New York" };
+//  Object.freeze(myObject);
+
+myObject.name = "dipol";
+myObject.age = 20;
+myObject.city = "BD";
+delete myObject.age;
+delete myObject.city;
+delete myObject.name;
+//  const myObjects = Object.freeze(myObject)
+// console.log(myObject);
 
 //   let myArray = [];
 // myArray.push(myObject);
 // console.log(myArray);
 
-  //  console.log(myObject);
-  //  const objSeel = {
-  //   name : "hasna",
-  //   bari: "kuuet",
-  //   kikoy: "biye korbe"
-  //  }
-  //  let seel = Object.seal(objSeel)
+//  console.log(myObject);
+//  const objSeel = {
+//   name : "hasna",
+//   bari: "kuuet",
+//   kikoy: "biye korbe"
+//  }
+//  let seel = Object.seal(objSeel)
 
-  let myObj = { name: "Alice", age: 30, city: "New York" };
-  for(let cleanObj in myObj){
+let myObj = { name: "Alice", age: 30, city: "New York" };
+for (let cleanObj in myObj) {
+  // const obj = cleanObj;
+  // console.log(cleanObj);
+}
+let myarrr = [
+  1, 2, 5, 4, 7, 8, 54, 6, 4, 8, 4, 1, 5, 6, 21, 6, 5, 23, 1, 5465, 54, 6451,
+  3213, 654, 6, 1231,
+];
+for (let arr of myarrr) {
+  // console.log(arr);
+}
+// mapping
 
-    // const obj = cleanObj;
+const numberss = [2, 4, 7, 5, 6, 3, 5, 4, 4, 4, 4, 4, 6];
+const fiveItems = numberss.map((num) => num * 2);
+// console.log(fiveItems);
 
-    console.log(cleanObj);
-  }
-  let myarrr = [1,2,5,4,7,8,54,6,4,8,4,1,5,6,21,6,5,23,1,5465,54,6451,3213,654,6,1231,]
-  for (let arr of myarrr){
+const itemsMaping = numberss.map((num) => num * 2);
+// console.log(itemsMaping);
+// string mapping
 
-    console.log(arr);
-  }
-  
+const friends = ["dipol", "chomok", "kodbel", "ambel"];
+const lengtsFriends = friends.map((fri) => fri.length);
+const fleet = friends.map((fname) => fname[0].toLocaleUpperCase());
+// console.log(fleet);
+
+// console.log(lengtsFriends);
+
+const nums = [
+  1, 5, 9, 3, 4, 5, 7, 6, 5, 4, 8, 5, 46, 4, 5, 4, 8, 5, 254, 87, 87, 54, 6, 7,
+  6, 6,
+];
+
+const filterNumber = nums.filter((x) => x > 1 * 2);
+const Evne = numbers.filter((x) => x % 2 === 0);
+// console.log(filterNumber);
+// console.log(Evne);
+
+const find = numbers.find((x) => x % 2 === 0);
+// console.log(find);
+
+const sturdensts = [
+  { id: 1, name: "abul", dept: "cst", mark: 45 },
+  { id: 2, name: "Kabul", dept: "Est", mark: 55 },
+  { id: 3, name: "Mabul", dept: "Kst", mark: 85 },
+  { id: 4, name: "SAbul", dept: "Cst", mark: 95 },
+];
+
+const funding = sturdensts.filter((study) => study.mark > 80);
+const dept = sturdensts.filter((dept) => dept.dept === "cst");
+const namess = sturdensts.filter((names) => names.name === "abul");
+// console.log(namess);
+
+// console.log(dept);
+
+// console.log(funding );
+
+const persons = [
+  { name: "chondra", roll: 20, results: 45, Ins: "MPI" },
+  { name: "ahad", roll: 2, results: 55, Ins: "kPI" },
+  { name: "simul", roll: 3, results: 85, Ins: "dPI" },
+  { name: "hisbul", roll: 8, results: 35, Ins: "gPI" },
+  { name: "hafra", roll: 6, results: 75, Ins: "MuI" },
+];
+
+// const findMethod = persons.filter(result => result.result > 50)
+// console.log(findMethod);
+const rollMethod = persons.find((r) => r.roll === 6);
+// console.log(rollMethod);
+// console.log("End of file");
+const nameMap = persons.map((p) => p.name);
+// console.log(nameMap);
+
+const roppMap = persons.map((p) => p.roll);
+// console.log(roppMap);
+
+const resultMap = persons.map((r) => r.results);
+// console.log(resultMap);
+
+persons.forEach((p) => {
+  // console.log(`name: ${p.name} got marks ${p.results}`);
+});
+
+for (let res of persons) {
+  console.log(`name: ${res.name} got marks ${res.results}`);
+}
+
+persons.forEach((r) => {
+  console.log(`name: ${r.name} of roll is: ${r.roll}`);
+});
+
+// reduce method
+
+const reduces = [2, 4, 2];
+console.log(reduces.reduce((acc, curr) => acc * curr))
