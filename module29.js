@@ -260,3 +260,28 @@ persons.forEach((r) => {
 
 const reduces = [2, 4, 2];
 console.log(reduces.reduce((acc, curr) => acc * curr))
+
+
+// class of js 
+
+class person {
+  constructor (name, age, location ){
+    this.name = name;
+    this.age = age ;
+    this.location = location;
+  }
+
+  great(){
+    console.log(`hi brother . I am a ${this.name} and my age is ${this.age}. I am come from ${this.location} .nice to meet you.see you again.thank you`);
+    
+  }
+  player(){
+    console.log(`I am ${this.name} and my team name is basca`);
+    
+  }
+}
+
+const greetingsStart = new person("Cu kong john", 20, "Suganda");
+const playerGreat = new person("scotke", 30)
+playerGreat.player()
+greetingsStart.great()
