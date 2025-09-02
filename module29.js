@@ -1,4 +1,4 @@
-console.log("Start of file");
+// console.log("Start of file");
 
 function addNumber(sum1, sum2) {
   const totalNumber = sum1 + sum2;
@@ -249,39 +249,89 @@ persons.forEach((p) => {
 });
 
 for (let res of persons) {
-  console.log(`name: ${res.name} got marks ${res.results}`);
+  // console.log(`name: ${res.name} got marks ${res.results}`);
 }
 
 persons.forEach((r) => {
-  console.log(`name: ${r.name} of roll is: ${r.roll}`);
+  // console.log(`name: ${r.name} of roll is: ${r.roll}`);
 });
 
 // reduce method
 
 const reduces = [2, 4, 2];
-console.log(reduces.reduce((acc, curr) => acc * curr))
+// console.log(reduces.reduce((acc, curr) => acc * curr))
 
-
-// class of js 
+// class of js
 
 class person {
-  constructor (name, age, location ){
+  constructor(name, age, location) {
     this.name = name;
-    this.age = age ;
+    this.age = age;
     this.location = location;
   }
 
-  great(){
-    console.log(`hi brother . I am a ${this.name} and my age is ${this.age}. I am come from ${this.location} .nice to meet you.see you again.thank you`);
-    
+  great() {
+    // console.log(
+    // `hi brother . I am a ${this.name} and my age is ${this.age}. I am come from ${this.location} .nice to meet you.see you again.thank you`
+    // );
   }
-  player(){
-    console.log(`I am ${this.name} and my team name is basca`);
-    
+  player() {
+    // console.log(`I am ${this.name} and my team name is basca`);
+    //
   }
 }
 
 const greetingsStart = new person("Cu kong john", 20, "Suganda");
-const playerGreat = new person("scotke", 30)
-playerGreat.player()
-greetingsStart.great()
+const playerGreat = new person("scotke", 30);
+playerGreat.player();
+greetingsStart.great();
+
+// truethy velue let
+let data;
+data = 0;
+data = ""; //empty string falsy
+data = " "; //white space is truthy
+data = "0";
+data = false;
+data = true;
+data = null;
+data = {};
+data = [];
+data = false;
+data = [];
+// console.log("value of data", data);
+
+if (data) {
+  // console.log("value of data thruthy ", data);
+} else {
+  // console.log(data, "data is falsy");
+}
+
+if (!data) {
+  // console.log("data is falsy inside if");
+}
+if (!!data === true) {
+  // console.log("only true inside the double not");
+}
+
+// triple eqaul 
+console.log(1 === 1);
+
+console.log(true === 1);
+console.log(false === 1);
+
+console.log(true === true);
+console.log(2 === '2');
+console.log(2 == 2);
+
+
+//if one value is string, another is number :covnvertng string >number then compare
+//if one number is boolean 
+
+
+// scope of block and scope and global 
+
+if (name = 0 ){
+  console.log('my name is block ');
+  
+}
